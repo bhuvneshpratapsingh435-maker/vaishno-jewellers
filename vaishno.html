@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaishno Jewellers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --brand-gold: #d4af37;
+      --brand-dark: #3b2f0b;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919837888988" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-600 z-50">WhatsApp</a>
+
+<!-- Header -->
+<header class="bg-white shadow sticky top-0 z-40">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center font-bold text-white">VJ</div>
+      <h1 class="text-2xl font-bold">Vaishno Jewellers</h1>
+    </div>
+    <nav class="space-x-5">
+      <a href="#home" class="hover:text-yellow-600">Home</a>
+      <a href="#products" class="hover:text-yellow-600">Shop</a>
+      <a href="#gallery" class="hover:text-yellow-600">Gallery</a>
+      <a href="#price" class="hover:text-yellow-600">Price</a>
+      <a href="#about" class="hover:text-yellow-600">About</a>
+      <a href="#contact" class="hover:text-yellow-600">Contact</a>
+      <button onclick="toggleLang()" class="ml-4 border px-3 py-1 rounded">Hindi / English</button>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section id="home" class="bg-gradient-to-r from-yellow-100 to-yellow-300 py-24 text-center">
+  <h2 class="text-4xl font-bold mb-4 lang" data-en="Elegant Jewellery for Every Occasion" data-hi="Har Mauke Ke Liye Shaandaar Jewellery">Elegant Jewellery for Every Occasion</h2>
+  <p class="max-w-xl mx-auto mb-6 lang" data-en="Certified gold, diamond and silver collections." data-hi="Certified gold, diamond aur silver collections.">Certified gold, diamond and silver collections.</p>
+  <a href="#products" class="bg-yellow-600 text-white px-6 py-3 rounded-2xl shadow hover:bg-yellow-700">Shop Now</a>
+</section>
+
+<!-- Products -->
+<section id="products" class="max-w-7xl mx-auto px-6 py-20">
+  <h3 class="text-3xl font-semibold text-center mb-12">Shop Jewellery</h3>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-white p-6 rounded-2xl shadow">
+      <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80" class="rounded mb-4" />
+      <h4 class="font-bold">Gold Necklace</h4>
+      <p>₹85,000</p>
+    </div>
+    <div class="bg-white p-6 rounded-2xl shadow">
+      <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80" class="rounded mb-4" />
+      <h4 class="font-bold">Diamond Ring</h4>
+      <p>₹42,000</p>
+    </div>
+    <div class="bg-white p-6 rounded-2xl shadow">
+      <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80" class="rounded mb-4" />
+      <h4 class="font-bold">Silver Bracelet</h4>
+      <p>₹9,500</p>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="bg-white py-20">
+  <h3 class="text-3xl font-semibold text-center mb-10">Gallery</h3>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto px-6">
+    <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=800&q=80" class="rounded" />
+    <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=800&q=80" class="rounded" />
+    <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=800&q=80" class="rounded" />
+    <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=800&q=80" class="rounded" />
+  </div>
+</section>
+
+
+
+<!-- About -->
+<section id="about" class="py-20 text-center">
+  <h3 class="text-3xl font-semibold mb-4">About Us</h3>
+  <p class="max-w-3xl mx-auto">Vaishno Jewellers is a trusted name in purity and craftsmanship, serving customers for generations.</p>
+</section>
+
+<!-- Contact + Map -->
+<section id="contact" class="bg-gray-100 py-20">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-6">
+    <form class="bg-white p-8 rounded-2xl shadow">
+      <h3 class="text-2xl font-semibold mb-4">Contact Us</h3>
+      <input type="text" placeholder="Name" class="border p-3 rounded w-full mb-3" />
+      <input type="email" placeholder="Email" class="border p-3 rounded w-full mb-3" />
+      <textarea placeholder="Message" class="border p-3 rounded w-full mb-3"></textarea>
+      <button class="bg-yellow-600 text-white py-3 rounded-2xl w-full">Send</button>
+    </form>
+    <iframe class="rounded-2xl shadow w-full h-[350px]" src="https://www.google.com/maps?q=Bulandshahr%20Uttar%20Pradesh&output=embed"></iframe>
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-white text-center py-6">
+  © 2026 Vaishno Jewellers. All Rights Reserved.
+</footer>
+
+<script>
+let hindi=false;
+function toggleLang(){
+  hindi=!hindi;
+  document.querySelectorAll('.lang').forEach(el=>{
+    el.innerText = hindi ? el.dataset.hi : el.dataset.en;
+  });
+}
+</script>
+
+</body>
+</html>
